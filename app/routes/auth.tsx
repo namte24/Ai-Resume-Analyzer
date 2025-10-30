@@ -19,16 +19,16 @@ function Auth() {
         }
     },[auth.isAuthenticated, next])
   return (
-    <main className="bg-[url('/images/bg-auth.svg')] bg-cover min-h-screen flex items-center justify-center">
+    <main className="bg-gray-900 bg-cover min-h-screen flex items-center justify-center">
         <div className="gradient-border shadow-lg">
-            <section className="flex flex-col gap-8 bg-white rounded-2xl p-10">
+            <section className="flex flex-col gap-8 bg-gray-800 rounded-2xl p-10">
                 <div className="flex flex-col items-center gap-2 text-center">
                     <h1>Welcome</h1>
                     <h2>Log in!</h2>
                 </div>
                 <div>
                     {isLoading ? (
-                        <button className="auth-button animate-pulse">
+                        <button className="auth-button animate-pulse bg-sky-400">
                             <p>Signing you in...</p>
                         </button>
                     ): (

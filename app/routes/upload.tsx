@@ -90,12 +90,12 @@ function Upload() {
         handleAnalyze({companyName, jobTitle, jobDescription, file})
     }
   return (
-    <main className="bg-[url('/images/bg-main.svg')] bg-cover">
+    <main className="bg-gray-900 bg-cover">
         <Navbar />
 
         <section className='main-section'>
             <div className='page-heading py-16'>
-                <h1>Smart feedback fopr your dream job.</h1>
+                <h1>Smart feedback for your dream job.</h1>
                 {isProcessing? (
                     <>
                         <h2>{statusText}</h2>
